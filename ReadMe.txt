@@ -2,8 +2,12 @@ https://github.com/okovtun/PV_319_ADO.git
 https://www.youtube.com/playlist?list=PLeqyOOqxeiINU_oiVfrFFUtdIjISweOYT
 
 TODO:
+1. ƒобавить в 'Connector' метод InsertMovie(), который добавл€ет киношку;
+2. Ќаписать в 'Connector'-e метод Insert(), который добавл€ет что угодно, и куда угодно;
+
+DONE:
 1. ѕри помощи SQL-запроса удалить лишние пробелы из таблицы 'Directors';	DONE
 2. —делать COMMIT;
 3. —оздать ветку 'MoviesConnector' и в этой ветке подключение к Ѕазе,
-   и получение данных вынести в класс 'Connector';
-4. «алить репозиторий на GitHub;
+   и получение данных вынести в класс 'Connector';	DONE
+4. «алить репозиторий на GitHub;		DONE
