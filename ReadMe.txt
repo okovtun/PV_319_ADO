@@ -8,6 +8,11 @@ Max Payne:
 	https://github.com/MaSidrenko/ManagePassword/tree/master/ManagePassword
 
 TODO:
+1. DataTable:	https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-9.0
+2. DataSet:		https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-9.0
+
+
+DONE:
 1. На вкладку 'Directions' добавить галочку "Показать пустые направления";
 
 TODO:
