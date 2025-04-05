@@ -12,6 +12,10 @@ TODO:
 2. DataSet:		https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-9.0
 
 TODO:
+Метод Print() должен определять, есть ли у таблицы родитель, и если он есть,
+то вместо числового значения ключа должно выводиться его целевое значение.
+
+DONE:
 1. Сделать COMMIT и создать ветку 'DataSetOptimisation';
 2. В этой ветке оптимизировать код создания и заполнения 'DataSet' прямо в классе 'MainForm';
 

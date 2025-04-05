@@ -40,7 +40,7 @@ namespace AcademyDataSet
 			GroupsRelatedData.Tables.Add(table);
 			for (int i = 0; i < separated_columns.Length; i++)
 				GroupsRelatedData.Tables[table].Columns.Add(separated_columns[i]);
-			GroupsRelatedData.Tables[table].PrimaryKey = 
+			GroupsRelatedData.Tables[table].PrimaryKey =
 				new DataColumn[] { GroupsRelatedData.Tables[table].Columns[separated_columns[0]] };
 			tables.Add($"{table},{columns}");
 		}
@@ -100,8 +100,8 @@ namespace AcademyDataSet
 				);
 
 			//4) Загружаем данные в таблицы:
-			string directions_cmd	= "SELECT * FROM Directions";
-			string groups_cmd		= "SELECT * FROM Groups";
+			string directions_cmd = "SELECT * FROM Directions";
+			string groups_cmd = "SELECT * FROM Groups";
 			SqlDataAdapter directionsAdapter = new SqlDataAdapter(directions_cmd, connection);
 			SqlDataAdapter groupsAdapter = new SqlDataAdapter(groups_cmd, connection);
 
@@ -122,10 +122,12 @@ namespace AcademyDataSet
 $"{row[dst_Groups_col_group_id]}\t{row[dst_Groups_col_group_name]}\t{row.GetParentRow(dsRelation_GroupsDirections)[dst_col_direction_name]}"
 );
 			}
+			Console.WriteLine("\n==================================\n");
 		}
 		void Print(string table)
 		{
 			Console.WriteLine("\n------------------------------------\n");
+			Console.WriteLine(hasParents(table));
 			foreach (DataRow row in GroupsRelatedData.Tables[table].Rows)
 			{
 				for (int i = 0; i < row.ItemArray.Length; i++)
@@ -135,6 +137,14 @@ $"{row[dst_Groups_col_group_id]}\t{row[dst_Groups_col_group_name]}\t{row.GetPare
 				Console.WriteLine();
 			}
 			Console.WriteLine("\n------------------------------------\n");
+		}
+		bool hasParents(string table)
+		{
+			for (int i = 0; i < GroupsRelatedData.Relations.Count; i++)
+			{
+				if (GroupsRelatedData.Relations[i].ChildTable.TableName == table) return true;
+			}
+			return false;
 		}
 		void Check()
 		{
