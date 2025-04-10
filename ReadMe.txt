@@ -11,10 +11,17 @@ DataSet:
 https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset
 
 TODO:
+0. Сделать COMMIT и создать ветку 'Decomposition';
+1. Обеспечить обновление кэша каждые 5 минут, и при необходимости обновить кэш прямо сейчас должна быть кнопка Refresh;
+2. Вынести класс Cache в отдельный проект;
+3. Вынести класс Connector в отдельный проект и попробовать применить его в основном проекте 'Academy' из другого проекта;
+4. Все ComboBox-ы должны обрабатываться одной функцией;
+
+DONE:
 1. DataTable:	https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-9.0
 2. DataSet:		https://learn.microsoft.com/en-us/dotnet/api/system.data.dataset?view=net-9.0
 
-TODO:
+DONE:
 Метод Print() должен определять, есть ли у таблицы родитель, и если он есть,
 то вместо числового значения ключа должно выводиться его целевое значение.
 
