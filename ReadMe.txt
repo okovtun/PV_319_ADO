@@ -11,6 +11,12 @@ DataSet:
 https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset
 
 TODO:
+1. Прикрутить обработчик к выпадающему списку 'cbStudentsGroup';
+2. Подумать над тем, как определять зависимые ComboBox-ы и фильтровать в них значения
+   при выборе значения в основном ComboBox-е, например, когда мы выбираем направление,
+   то в cbStudentsGroup должны отображаться только группы выбранного направления;
+
+TODO:
 0. Сделать COMMIT и создать ветку 'Decomposition';
 1. Обеспечить обновление кэша каждые 5 минут, и при необходимости обновить кэш прямо сейчас должна быть кнопка Refresh;
 2. Вынести класс Cache в отдельный проект;
