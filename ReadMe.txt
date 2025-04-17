@@ -7,6 +7,9 @@ Best of the best WinAPI lessons:
 Max Payne:
 	https://github.com/MaSidrenko/ManagePassword/tree/master/ManagePassword
 
+Tommy Vercetty:
+	https://github.com/okovtun/PD_321_ADO
+
 DataSet:
 https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset
 
